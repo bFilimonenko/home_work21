@@ -9,14 +9,10 @@ for (let i = 0; i < arrLength; i++) {
   arr.push(digit);
 }
 
-document.write(arr + "<br/>");
+console.log(arr);
 
-const compareFun = function compareFun(a, b) {
-  return a - b;
-};
+console.log(arr.sort((a, b) => a - b));
 
-document.write(arr.sort(compareFun) + "<br/>");
+arr.splice(1, 2);// Not including
 
-const deletingElem = arr.splice(1, 2);// Not including
-
-document.write(arr);
+console.log(arr);

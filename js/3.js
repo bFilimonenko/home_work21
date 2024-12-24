@@ -56,3 +56,16 @@ let users = [
     phone: "+1 (837) 586-3283",
     address: "314 Dunne Place, Bawcomville, Guam, 9053"
   }];
+
+const usersPhones = [];
+let usersBalancesSum = 0;
+
+for (const user of users) {
+  if (user.balance > 2000) {
+    usersPhones.push(user.phone);
+  }
+  usersBalancesSum += user.balance;
+}
+
+console.log(usersPhones);
+console.log(usersBalancesSum.toFixed(2));
